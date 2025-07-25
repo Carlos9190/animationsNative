@@ -9,9 +9,9 @@ export default function Animation1() {
         Animated.timing(
             animation, {
             toValue: 1,
-            duration: 500,
-            useNativeDriver: false
-        }).start()
+            duration: 500, // Time quantity
+            useNativeDriver: false // Mandatory
+        }).start() // Never forget .start() or the animation won't display
     }, [])
 
     return (
